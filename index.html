@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js Scripts</title>
+</head>
+<body>
+<script type="application/javascript">
+    let myArray = ["молоко", "пиво", "пиво", "молоко", "молоко"];
+
+    for (let i = 0; i < myArray.length; i++) {
+        if (myArray[i] === "молоко") {
+            console.log("хорошо")
+        } else if (myArray[i] === "пиво") {
+            console.log("плохо")
+        }
+    }
+</script>
+
+
+<script type="application/javascript">
+    let firstArray = [1, 5, 12, 4, 3];
+    let secondArray = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let thirdArray = [3, 10, 17];
+
+    function average(a) {
+        var sum = 0;
+        for (let i = 0; i < a.length; i++) {
+            sum += a[i]
+        }
+        console.log(sum / a.length)
+    }
+
+    average(firstArray);
+    average(secondArray);
+    average(thirdArray);
+</script>
+
+<script type="application/javascript">
+    function riddle() {
+        let answer = prompt("У квадратного стола отпилили один угол. Сколько теперь углов у него стало?");
+        if (answer.toLowerCase() === "пять" || answer === "5") {
+            alert("Ответ верный.")
+        } else {
+            alert("Ответ неверный.")
+        }
+    }
+    riddle()
+</script>
+
+<script type="application/javascript">
+    let Duck = {
+        name: "Дональд",
+        color: "белый",
+        old: 1,
+        toStr: function () {
+            console.log(this.name + ", " + this.color + ", " + this.old + " год")
+        },
+        say: function () {
+            console.log("Кря кря")
+        }
+    };
+
+    Duck.toStr();
+    Duck.say();
+</script>
+</body>
+</html>
