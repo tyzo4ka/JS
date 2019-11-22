@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js Scripts</title>
+</head>
+<body>
+
+<div id="container"></div>
+<input id="add-item-btn" type="button" value="+">
+
+<script type="application/javascript">
+
+    let div = document.getElementsByTagName("div");
+    let button = document.getElementById('add-item-btn');
+
+    button.onclick=function() {
+        div[0].innerHTML += '<div class="element">Element</div>';
+    };
+
+</script>
+</body>
+</html>

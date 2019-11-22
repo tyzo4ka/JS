@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js Scripts</title>
+</head>
+<body>
+
+<div id="container"></div>
+
+<script type="application/javascript">
+
+    let div = document.getElementsByTagName("div");
+
+    for (let i = 0; i < 5; i++){
+        div[0].innerHTML += `<div class="element">Element ${i+1}</div>`;
+    }
+
+</script>
+</body>
+</html>
